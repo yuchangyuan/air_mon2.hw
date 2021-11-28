@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name air_mon2)(type KiCad)(uri ${KIPRJMOD}/air_mon2.pretty)(options "")(descr ""))
+)

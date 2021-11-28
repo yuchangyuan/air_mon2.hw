@@ -1,0 +1,567 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L power:+5V #PWR0104
+U 1 1 619A051E
+P 2500 4050
+F 0 "#PWR0104" H 2500 3900 50  0001 C CNN
+F 1 "+5V" H 2515 4223 50  0000 C CNN
+F 2 "" H 2500 4050 50  0001 C CNN
+F 3 "" H 2500 4050 50  0001 C CNN
+	1    2500 4050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5300 2250 5350 2250
+$Comp
+L power:GND #PWR0106
+U 1 1 619A3B09
+P 1550 3650
+F 0 "#PWR0106" H 1550 3400 50  0001 C CNN
+F 1 "GND" H 1555 3477 50  0000 C CNN
+F 2 "" H 1550 3650 50  0001 C CNN
+F 3 "" H 1550 3650 50  0001 C CNN
+	1    1550 3650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5300 2350 5450 2350
+Wire Wire Line
+	5300 2450 5450 2450
+$Comp
+L power:+3V3 #PWR0107
+U 1 1 619B06BE
+P 2400 2250
+F 0 "#PWR0107" H 2400 2100 50  0001 C CNN
+F 1 "+3V3" H 2415 2423 50  0000 C CNN
+F 2 "" H 2400 2250 50  0001 C CNN
+F 3 "" H 2400 2250 50  0001 C CNN
+	1    2400 2250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1550 3550 1550 3650
+$Comp
+L Connector_Generic:Conn_01x19 J1
+U 1 1 61A3258D
+P 3800 3150
+F 0 "J1" H 3880 3192 50  0000 L CNN
+F 1 "Conn_01x19" H 3550 2100 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x19_P2.54mm_Vertical" H 3800 3150 50  0001 C CNN
+F 3 "~" H 3800 3150 50  0001 C CNN
+	1    3800 3150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4300 4050 3600 4050
+Wire Wire Line
+	4300 3950 3600 3950
+Wire Wire Line
+	4300 3850 3600 3850
+Wire Wire Line
+	4300 3750 3600 3750
+Wire Wire Line
+	4300 3650 3600 3650
+Wire Wire Line
+	4300 3450 3600 3450
+Wire Wire Line
+	4300 3350 3600 3350
+Wire Wire Line
+	4300 3250 3600 3250
+Wire Wire Line
+	4300 2250 3600 2250
+Wire Wire Line
+	3600 2350 4300 2350
+Wire Wire Line
+	4300 2450 3600 2450
+Wire Wire Line
+	3600 2550 4300 2550
+Wire Wire Line
+	4300 2650 3600 2650
+Wire Wire Line
+	3600 2750 4300 2750
+Wire Wire Line
+	4300 2850 3600 2850
+Wire Wire Line
+	3600 2950 4300 2950
+Wire Wire Line
+	4300 3050 4150 3050
+Wire Wire Line
+	3600 3150 4250 3150
+Wire Wire Line
+	3600 4050 2500 4050
+Connection ~ 3600 4050
+Wire Wire Line
+	3600 2250 2400 2250
+Connection ~ 3600 2250
+Wire Wire Line
+	1550 3550 3600 3550
+Connection ~ 3600 3550
+Wire Wire Line
+	3600 3550 4300 3550
+$Comp
+L air_mon2:nodemcu-32s U1
+U 1 1 6197FD68
+P 4300 4050
+F 0 "U1" H 4669 4505 50  0000 L CNN
+F 1 "nodemcu-32s" H 4669 4414 50  0000 L CNN
+F 2 "air_mon2:nodemcu-32s" H 4300 4050 50  0001 C CNN
+F 3 "" H 4300 4050 50  0001 C CNN
+	1    4300 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x19 J2
+U 1 1 61A61896
+P 5650 3150
+F 0 "J2" H 5730 3192 50  0000 L CNN
+F 1 "Conn_01x19" H 5730 3101 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x19_P2.54mm_Vertical" H 5650 3150 50  0001 C CNN
+F 3 "~" H 5650 3150 50  0001 C CNN
+	1    5650 3150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5300 2550 5450 2550
+Wire Wire Line
+	5450 2650 5300 2650
+Wire Wire Line
+	5450 2750 5300 2750
+Wire Wire Line
+	5450 2850 5350 2850
+Wire Wire Line
+	5300 2950 5450 2950
+Wire Wire Line
+	5450 3050 5300 3050
+Wire Wire Line
+	5300 3150 5450 3150
+Wire Wire Line
+	5450 3250 5300 3250
+Wire Wire Line
+	5300 3350 5450 3350
+Wire Wire Line
+	5450 3450 5300 3450
+Wire Wire Line
+	5300 3550 5450 3550
+Wire Wire Line
+	5300 3650 5450 3650
+Wire Wire Line
+	5450 3750 5300 3750
+Wire Wire Line
+	5300 3850 5450 3850
+Wire Wire Line
+	5450 3950 5300 3950
+Wire Wire Line
+	5300 4050 5450 4050
+$Comp
+L air_mon2:WZ-H3-K U4
+U 1 1 61A7E890
+P 10350 3200
+F 0 "U4" H 10250 3600 50  0000 C CNN
+F 1 "WZ-H3-K" H 10100 3450 50  0000 C CNN
+F 2 "air_mon2:WZ-H3-K" H 10350 3200 50  0001 C CNN
+F 3 "" H 10350 3200 50  0001 C CNN
+	1    10350 3200
+	-1   0    0    1   
+$EndComp
+$Comp
+L air_mon2:WZ-H3 U3
+U 1 1 61A7D75F
+P 9800 3750
+F 0 "U3" H 9900 3450 50  0000 R CNN
+F 1 "WZ-H3" H 10000 3550 50  0000 R CNN
+F 2 "air_mon2:WZ-H3" H 9750 3700 50  0001 C CNN
+F 3 "" H 9750 3700 50  0001 C CNN
+	1    9800 3750
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	10000 3250 10000 3050
+Wire Wire Line
+	10000 3350 9950 3350
+Wire Wire Line
+	9950 3350 9950 3100
+Wire Wire Line
+	9450 3350 9500 3350
+Wire Wire Line
+	10000 4100 9400 4100
+Wire Wire Line
+	9400 3550 9500 3550
+Wire Wire Line
+	10000 3750 9900 3750
+Wire Wire Line
+	9900 4200 9350 4200
+Wire Wire Line
+	9350 3450 9500 3450
+Wire Wire Line
+	9900 3750 9900 4200
+Wire Wire Line
+	9350 3450 9350 4200
+Wire Wire Line
+	10000 3850 10000 4100
+Wire Wire Line
+	9400 3550 9400 4100
+$Comp
+L power:GND #PWR01
+U 1 1 61ABD0E2
+P 9150 3150
+F 0 "#PWR01" H 9150 2900 50  0001 C CNN
+F 1 "GND" H 9155 2977 50  0000 C CNN
+F 2 "" H 9150 3150 50  0001 C CNN
+F 3 "" H 9150 3150 50  0001 C CNN
+	1    9150 3150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9300 3150 9300 3100
+$Comp
+L power:+5V #PWR02
+U 1 1 61AC06AD
+P 10000 3050
+F 0 "#PWR02" H 10000 2900 50  0001 C CNN
+F 1 "+5V" H 10015 3223 50  0000 C CNN
+F 2 "" H 10000 3050 50  0001 C CNN
+F 3 "" H 10000 3050 50  0001 C CNN
+	1    10000 3050
+	1    0    0    -1  
+$EndComp
+Connection ~ 10000 3050
+$Comp
+L power:GND #PWR0105
+U 1 1 61AC9B7E
+P 5850 1850
+F 0 "#PWR0105" H 5850 1600 50  0001 C CNN
+F 1 "GND" H 5855 1677 50  0000 C CNN
+F 2 "" H 5850 1850 50  0001 C CNN
+F 3 "" H 5850 1850 50  0001 C CNN
+	1    5850 1850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5350 2850 5350 2250
+Connection ~ 5350 2850
+Wire Wire Line
+	5350 2850 5300 2850
+Connection ~ 5350 2250
+Wire Wire Line
+	5350 2250 5450 2250
+Wire Wire Line
+	5350 2250 5350 1850
+Wire Wire Line
+	5350 1850 5850 1850
+$Comp
+L Mechanical:MountingHole_Pad H1
+U 1 1 61AED3B4
+P 2100 5200
+F 0 "H1" V 2054 5350 50  0000 L CNN
+F 1 "MountingHole_Pad" V 2145 5350 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2_Pad" H 2100 5200 50  0001 C CNN
+F 3 "~" H 2100 5200 50  0001 C CNN
+	1    2100 5200
+	0    1    1    0   
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H2
+U 1 1 61AF2B7B
+P 2100 5400
+F 0 "H2" V 2054 5550 50  0000 L CNN
+F 1 "MountingHole_Pad" V 2145 5550 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2_Pad" H 2100 5400 50  0001 C CNN
+F 3 "~" H 2100 5400 50  0001 C CNN
+	1    2100 5400
+	0    1    1    0   
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H3
+U 1 1 61AF3607
+P 2100 5600
+F 0 "H3" V 2054 5750 50  0000 L CNN
+F 1 "MountingHole_Pad" V 2145 5750 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2_Pad" H 2100 5600 50  0001 C CNN
+F 3 "~" H 2100 5600 50  0001 C CNN
+	1    2100 5600
+	0    1    1    0   
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H4
+U 1 1 61AF413E
+P 2100 5800
+F 0 "H4" V 2054 5950 50  0000 L CNN
+F 1 "MountingHole_Pad" V 2145 5950 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2_Pad" H 2100 5800 50  0001 C CNN
+F 3 "~" H 2100 5800 50  0001 C CNN
+	1    2100 5800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2000 5200 2000 5400
+Wire Wire Line
+	2000 5600 2000 5800
+Wire Wire Line
+	2000 5400 2000 5600
+Connection ~ 2000 5400
+Connection ~ 2000 5600
+$Comp
+L power:GND #PWR03
+U 1 1 61AFD0CE
+P 2000 6000
+F 0 "#PWR03" H 2000 5750 50  0001 C CNN
+F 1 "GND" H 2005 5827 50  0000 C CNN
+F 2 "" H 2000 6000 50  0001 C CNN
+F 3 "" H 2000 6000 50  0001 C CNN
+	1    2000 6000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2000 6000 2000 5800
+Connection ~ 2000 5800
+$Comp
+L air_mon2:TW-SGP30 U5
+U 1 1 61B07790
+P 7050 2550
+F 0 "U5" H 7578 2721 50  0000 L CNN
+F 1 "TW-SGP30" H 7578 2630 50  0000 L CNN
+F 2 "air_mon2:TW-SGP30" H 7050 2550 50  0001 C CNN
+F 3 "" H 7050 2550 50  0001 C CNN
+	1    7050 2550
+	1    0    0    -1  
+$EndComp
+Connection ~ 5450 2450
+Wire Wire Line
+	5450 2750 6500 2750
+Wire Wire Line
+	6500 2750 6500 2350
+Wire Wire Line
+	6500 2350 6600 2350
+Connection ~ 5450 2750
+$Comp
+L power:GND #PWR05
+U 1 1 61B2FC04
+P 7500 2650
+F 0 "#PWR05" H 7500 2400 50  0001 C CNN
+F 1 "GND" H 7505 2477 50  0000 C CNN
+F 2 "" H 7500 2650 50  0001 C CNN
+F 3 "" H 7500 2650 50  0001 C CNN
+	1    7500 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR04
+U 1 1 61B30540
+P 6500 1900
+F 0 "#PWR04" H 6500 1750 50  0001 C CNN
+F 1 "+3V3" H 6515 2073 50  0000 C CNN
+F 2 "" H 6500 1900 50  0001 C CNN
+F 3 "" H 6500 1900 50  0001 C CNN
+	1    6500 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 61B31968
+P 6250 2250
+F 0 "R1" H 6320 2296 50  0000 L CNN
+F 1 "1K" H 6320 2205 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 6180 2250 50  0001 C CNN
+F 3 "~" H 6250 2250 50  0001 C CNN
+	1    6250 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 61B32C6B
+P 6500 2200
+F 0 "R2" H 6570 2246 50  0000 L CNN
+F 1 "1K" H 6570 2155 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 6430 2200 50  0001 C CNN
+F 3 "~" H 6500 2200 50  0001 C CNN
+	1    6500 2200
+	1    0    0    -1  
+$EndComp
+Connection ~ 6500 2350
+Wire Wire Line
+	6250 2050 6500 2050
+Wire Wire Line
+	6500 2050 6950 2050
+Wire Wire Line
+	6950 2050 6950 2200
+Connection ~ 6500 2050
+Wire Wire Line
+	6500 2050 6500 1900
+Wire Wire Line
+	6250 2050 6250 2100
+Wire Wire Line
+	5450 2450 6250 2450
+Wire Wire Line
+	6250 2400 6250 2450
+Connection ~ 6250 2450
+Wire Wire Line
+	6250 2450 6600 2450
+Wire Wire Line
+	5450 3250 8300 3250
+Wire Wire Line
+	8300 3250 8300 3550
+Wire Wire Line
+	8300 3550 9400 3550
+Connection ~ 5450 3250
+Connection ~ 9400 3550
+Wire Wire Line
+	5450 3350 8400 3350
+Wire Wire Line
+	8400 3350 8400 3450
+Wire Wire Line
+	8400 3450 9350 3450
+Connection ~ 5450 3350
+Connection ~ 9350 3450
+$Comp
+L air_mon2:PMS7003 U2
+U 1 1 6199A4A7
+P 4550 1800
+F 0 "U2" H 4775 2715 50  0000 C CNN
+F 1 "PMS7003" H 4775 2624 50  0000 C CNN
+F 2 "air_mon2:PMS7003" H 4550 1800 50  0001 C CNN
+F 3 "" H 4550 1800 50  0001 C CNN
+	1    4550 1800
+	1    0    0    -1  
+$EndComp
+Connection ~ 4250 850 
+Wire Wire Line
+	4250 700  4250 850 
+$Comp
+L power:+5V #PWR0103
+U 1 1 6199E0F1
+P 4250 700
+F 0 "#PWR0103" H 4250 550 50  0001 C CNN
+F 1 "+5V" H 4265 873 50  0000 C CNN
+F 2 "" H 4250 700 50  0001 C CNN
+F 3 "" H 4250 700 50  0001 C CNN
+	1    4250 700 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0102
+U 1 1 6199CC90
+P 3850 1350
+F 0 "#PWR0102" H 3850 1100 50  0001 C CNN
+F 1 "GND" H 3855 1177 50  0000 C CNN
+F 2 "" H 3850 1350 50  0001 C CNN
+F 3 "" H 3850 1350 50  0001 C CNN
+	1    3850 1350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5450 1250 5450 1300
+Wire Wire Line
+	5100 1250 5450 1250
+$Comp
+L power:GND #PWR0101
+U 1 1 6199C1C7
+P 5450 1300
+F 0 "#PWR0101" H 5450 1050 50  0001 C CNN
+F 1 "GND" H 5455 1127 50  0000 C CNN
+F 2 "" H 5450 1300 50  0001 C CNN
+F 3 "" H 5450 1300 50  0001 C CNN
+	1    5450 1300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5200 1150 5100 1150
+Wire Wire Line
+	5200 850  5200 1150
+Wire Wire Line
+	4250 850  5200 850 
+Wire Wire Line
+	4250 1150 4250 850 
+Wire Wire Line
+	4450 1150 4250 1150
+Wire Wire Line
+	4150 3050 4150 1450
+Wire Wire Line
+	4150 1450 4450 1450
+Connection ~ 4150 3050
+Wire Wire Line
+	4150 3050 3600 3050
+Wire Wire Line
+	4450 1550 4250 1550
+Wire Wire Line
+	4250 1550 4250 3150
+Connection ~ 4250 3150
+Wire Wire Line
+	4250 3150 4300 3150
+Wire Wire Line
+	4450 1250 3850 1250
+Wire Wire Line
+	3850 1250 3850 1350
+NoConn ~ 10000 3550
+NoConn ~ 10000 3450
+NoConn ~ 4450 1350
+NoConn ~ 5100 1550
+Wire Wire Line
+	9300 3150 9150 3150
+$Comp
+L power:GND #PWR07
+U 1 1 61BF3D35
+P 1800 1600
+F 0 "#PWR07" H 1800 1350 50  0001 C CNN
+F 1 "GND" H 1805 1427 50  0000 C CNN
+F 2 "" H 1800 1600 50  0001 C CNN
+F 3 "" H 1800 1600 50  0001 C CNN
+	1    1800 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR06
+U 1 1 61BF49DC
+P 1800 1050
+F 0 "#PWR06" H 1800 900 50  0001 C CNN
+F 1 "+5V" H 1815 1223 50  0000 C CNN
+F 2 "" H 1800 1050 50  0001 C CNN
+F 3 "" H 1800 1050 50  0001 C CNN
+	1    1800 1050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1550 1150 1800 1150
+Wire Wire Line
+	1800 1150 1800 1050
+Wire Wire Line
+	1550 1350 1800 1350
+Wire Wire Line
+	1800 1350 1800 1600
+NoConn ~ 1550 1250
+$Comp
+L Connector:Barrel_Jack_Switch J3
+U 1 1 61C77FC8
+P 1250 1250
+F 0 "J3" H 1307 1567 50  0000 C CNN
+F 1 "Barrel_Jack_Switch" H 1307 1476 50  0000 C CNN
+F 2 "Connector_BarrelJack:BarrelJack_Horizontal" H 1300 1210 50  0001 C CNN
+F 3 "~" H 1300 1210 50  0001 C CNN
+	1    1250 1250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9300 3100 9950 3100
+Wire Wire Line
+	9450 3050 9450 3350
+Wire Wire Line
+	9450 3050 10000 3050
+Wire Wire Line
+	9500 3250 9300 3250
+Wire Wire Line
+	9300 3250 9300 3150
+Connection ~ 9300 3150
+$EndSCHEMATC
