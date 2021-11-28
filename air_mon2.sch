@@ -341,7 +341,7 @@ F 3 "" H 7050 2550 50  0001 C CNN
 $EndComp
 Connection ~ 5450 2450
 Wire Wire Line
-	5450 2750 6500 2750
+	5450 2750 6350 2750
 Wire Wire Line
 	6500 2750 6500 2350
 Wire Wire Line
@@ -415,7 +415,7 @@ Wire Wire Line
 Wire Wire Line
 	8300 3250 8300 3550
 Wire Wire Line
-	8300 3550 9400 3550
+	8300 3550 8850 3550
 Connection ~ 5450 3250
 Connection ~ 9400 3550
 Wire Wire Line
@@ -423,7 +423,7 @@ Wire Wire Line
 Wire Wire Line
 	8400 3350 8400 3450
 Wire Wire Line
-	8400 3450 9350 3450
+	8400 3450 8600 3450
 Connection ~ 5450 3350
 Connection ~ 9350 3450
 $Comp
@@ -488,7 +488,7 @@ Wire Wire Line
 Wire Wire Line
 	4450 1150 4250 1150
 Wire Wire Line
-	4150 3050 4150 1450
+	4150 3050 4150 1800
 Wire Wire Line
 	4150 1450 4450 1450
 Connection ~ 4150 3050
@@ -497,7 +497,7 @@ Wire Wire Line
 Wire Wire Line
 	4450 1550 4250 1550
 Wire Wire Line
-	4250 1550 4250 3150
+	4250 1550 4250 1850
 Connection ~ 4250 3150
 Wire Wire Line
 	4250 3150 4300 3150
@@ -541,7 +541,6 @@ Wire Wire Line
 	1550 1350 1800 1350
 Wire Wire Line
 	1800 1350 1800 1600
-NoConn ~ 1550 1250
 $Comp
 L Connector:Barrel_Jack_Switch J3
 U 1 1 61C77FC8
@@ -564,4 +563,153 @@ Wire Wire Line
 Wire Wire Line
 	9300 3250 9300 3150
 Connection ~ 9300 3150
+$Comp
+L Device:R R5
+U 1 1 61A46DF2
+P 8600 3300
+F 0 "R5" H 8670 3346 50  0000 L CNN
+F 1 "10K" H 8670 3255 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 8530 3300 50  0001 C CNN
+F 3 "~" H 8600 3300 50  0001 C CNN
+	1    8600 3300
+	1    0    0    -1  
+$EndComp
+Connection ~ 8600 3450
+Wire Wire Line
+	8600 3450 9350 3450
+$Comp
+L Device:R R6
+U 1 1 61A47DCF
+P 8850 3400
+F 0 "R6" H 8920 3446 50  0000 L CNN
+F 1 "10K" H 8920 3355 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 8780 3400 50  0001 C CNN
+F 3 "~" H 8850 3400 50  0001 C CNN
+	1    8850 3400
+	1    0    0    -1  
+$EndComp
+Connection ~ 8850 3550
+Wire Wire Line
+	8850 3550 9400 3550
+$Comp
+L power:+3.3V #PWR011
+U 1 1 61A4842A
+P 8600 2950
+F 0 "#PWR011" H 8600 2800 50  0001 C CNN
+F 1 "+3.3V" H 8615 3123 50  0000 C CNN
+F 2 "" H 8600 2950 50  0001 C CNN
+F 3 "" H 8600 2950 50  0001 C CNN
+	1    8600 2950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8600 2950 8600 3050
+Wire Wire Line
+	8600 3050 8850 3050
+Wire Wire Line
+	8850 3050 8850 3250
+Connection ~ 8600 3050
+Wire Wire Line
+	8600 3050 8600 3150
+$Comp
+L Device:R R3
+U 1 1 61A52B46
+P 4000 1800
+F 0 "R3" V 3793 1800 50  0000 C CNN
+F 1 "10K" V 3884 1800 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 3930 1800 50  0001 C CNN
+F 3 "~" H 4000 1800 50  0001 C CNN
+	1    4000 1800
+	0    1    1    0   
+$EndComp
+Connection ~ 4150 1800
+Wire Wire Line
+	4150 1800 4150 1450
+$Comp
+L Device:R R4
+U 1 1 61A53392
+P 4400 1850
+F 0 "R4" V 4607 1850 50  0000 C CNN
+F 1 "10K" V 4516 1850 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 4330 1850 50  0001 C CNN
+F 3 "~" H 4400 1850 50  0001 C CNN
+	1    4400 1850
+	0    -1   -1   0   
+$EndComp
+Connection ~ 4250 1850
+Wire Wire Line
+	4250 1850 4250 3150
+$Comp
+L power:+3.3V #PWR08
+U 1 1 61A5D965
+P 3350 1650
+F 0 "#PWR08" H 3350 1500 50  0001 C CNN
+F 1 "+3.3V" H 3365 1823 50  0000 C CNN
+F 2 "" H 3350 1650 50  0001 C CNN
+F 3 "" H 3350 1650 50  0001 C CNN
+	1    3350 1650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3350 1650 3350 1800
+Wire Wire Line
+	3350 1800 3850 1800
+Wire Wire Line
+	3350 1800 3350 2000
+Wire Wire Line
+	3350 2000 4550 2000
+Wire Wire Line
+	4550 2000 4550 1850
+Connection ~ 3350 1800
+$Comp
+L air_mon2:GY-SHT31-D U6
+U 1 1 61A6C75E
+P 7050 3900
+F 0 "U6" H 7578 4071 50  0000 L CNN
+F 1 "GY-SHT31-D" H 7578 3980 50  0000 L CNN
+F 2 "air_mon2:GY-SHT31-D" H 7050 3900 50  0001 C CNN
+F 3 "" H 7050 3900 50  0001 C CNN
+	1    7050 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR010
+U 1 1 61A6F169
+P 7500 4150
+F 0 "#PWR010" H 7500 3900 50  0001 C CNN
+F 1 "GND" H 7505 3977 50  0000 C CNN
+F 2 "" H 7500 4150 50  0001 C CNN
+F 3 "" H 7500 4150 50  0001 C CNN
+	1    7500 4150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7500 4150 7500 4000
+NoConn ~ 7300 4000
+NoConn ~ 7150 4000
+Wire Wire Line
+	6250 2450 6250 3800
+Wire Wire Line
+	6250 3800 6600 3800
+Wire Wire Line
+	6350 2750 6350 3700
+Wire Wire Line
+	6350 3700 6600 3700
+Connection ~ 6350 2750
+Wire Wire Line
+	6350 2750 6500 2750
+$Comp
+L power:+3.3V #PWR09
+U 1 1 61A8708F
+P 6950 3550
+F 0 "#PWR09" H 6950 3400 50  0001 C CNN
+F 1 "+3.3V" H 6965 3723 50  0000 C CNN
+F 2 "" H 6950 3550 50  0001 C CNN
+F 3 "" H 6950 3550 50  0001 C CNN
+	1    6950 3550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1550 1250 1550 1350
+Connection ~ 1550 1350
 $EndSCHEMATC
