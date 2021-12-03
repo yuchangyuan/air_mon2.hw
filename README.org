@@ -1,0 +1,12 @@
+#+title: A simple air monitor with multiple sensor
+
++ data collect with nodemcu-32s
++ WZ-H3/WZ-H3-K for HCOH
++ SGP30 for CO2 & TVOC
++ SHT3X for humidity compensations
++ PMS7003 for PM2.5
+
+current version is v1.1, all sensor works:
+
++ only test with WZ-H3(manully soldering 2.54mm pin)
++ distance between SHT3X & ESP32 module is too small, cause measured temperature much higher than actual ambient temperature.
